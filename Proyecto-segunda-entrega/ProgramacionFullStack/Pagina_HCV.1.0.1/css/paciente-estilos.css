@@ -1,0 +1,300 @@
+/* estilos para el apartado de documentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-docsconsulta {
+  margin: 0;
+  padding: 24px 16px;
+  background: linear-gradient(180deg, #edf6ff 0%, #f5f8fc 100%);
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+.universal-container-pacient-dc {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 20px;
+  overflow: visible;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #173d63, #214d76);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff;
+}
+
+#offcanvasDarkNavbar {
+  background: #173d63;
+  color: white;
+}
+
+.container-fluid {
+  background: transparent;
+  color: white;
+}
+
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-docsconsulta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px 12px;
+  background: #edf5fb;
+  border-bottom: 1px solid #dfeaf5;
+}
+
+.cabecera-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.titulo-hospital {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #1b446a;
+}
+
+.subtitulo-hospital {
+  font-size: 0.85rem;
+  color: #3f5872;
+  font-weight: 600;
+}
+
+.img-logohc {
+  display: none;
+}
+
+.btn-help {
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  background: linear-gradient(135deg, #1d9cf0, #2781db);
+  border: none;
+  min-width: 150px;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.16);
+  text-decoration: none;
+}
+
+.btn-help a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.categorias-documentos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 18px 18px 12px;
+  background: #eef2f4;
+}
+
+.categorias-documentos .btn-group {
+  position: relative;
+  width: 100% !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 12px;
+  padding: 16px 18px 14px;
+  border-radius: 22px;
+  border: 1px solid #dfeaf5;
+  background: #f4f9fb;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
+  overflow: visible;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.categorias-documentos .btn-group:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 28px rgba(15, 23, 42, 0.08);
+}
+
+.doc-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #173d63;
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2vw, 2rem);
+  min-height: 70px;
+}
+
+.img-consulta {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  background: #ecf7ff;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.especialidad-panel {
+  position: relative;
+  width: 100%;
+}
+
+.especialidad-panel summary {
+  list-style: none;
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2a7acb, #34b6bb);
+  color: white;
+  font-weight: 700;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 8px 18px rgba(42, 122, 203, 0.18);
+  cursor: pointer;
+  text-align: center;
+}
+
+.especialidad-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.especialidad-panel summary:hover {
+  background: linear-gradient(135deg, #1d67b2, #2ea7ad);
+}
+
+.especialidad-menu {
+  margin-top: 10px;
+  padding: 0.7rem 0.6rem;
+  list-style: none;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #dfeaf5;
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.12);
+  z-index: 20;
+}
+
+.especialidad-menu li + li {
+  margin-top: 6px;
+}
+
+.especialidad-menu a {
+  display: block;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.especialidad-menu a:hover {
+  background: #eaf3ff;
+  color: #173d63;
+}
+
+.pantallas-secundarias {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #173d63, #1f5c8d);
+  color: white;
+  border-radius: 18px;
+  padding: 24px 22px;
+  box-shadow: 0 18px 30px rgba(23, 61, 99, 0.18);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.pantallas-secundarias h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  font-weight: 800;
+}
+
+.pantallas-secundarias p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .body-docsconsulta {
+    padding: 14px 10px;
+  }
+
+  .header-docsconsulta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categorias-documentos {
+    padding: 18px 14px;
+  }
+}
+
+/* estilos para el apartado de ayuda */
+.body-ayudapacient {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  font-family: arial;
+  text-align: center;
+  gap: 15px;
+}
+
+.body-ayudapacient .video-ayudapacient {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #34b6bb;
+  border-radius: 10px;
+  background-clip: content-box;
+  background-color: #659ddd;
+  box-shadow: inset 0 0 0 20px #3075cf;
+  width: fit-content;
+}
+
+.card .card-img-top {
+  width: 20% !important;
+}
+/*fin de estilos para el apartado de ayuda */

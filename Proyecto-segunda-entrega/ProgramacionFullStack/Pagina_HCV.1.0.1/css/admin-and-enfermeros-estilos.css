@@ -1,0 +1,370 @@
+/*INGRASO ADMIN */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fcfdfd;
+}
+header {
+  width: 100%;
+  background-color: #0c6af7;
+}
+.bienvenida {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border: 4px solid black;
+  background-color: #0084ff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.logo-hc {
+  width: 50%;
+  background-color: #fcfdfd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form button,
+form .btn {
+  justify-self: start;
+}
+
+.from {
+  gap: 10px;
+}
+.universal-container-men-admin {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  flex-direction: column;
+}
+.decorado-men-admin {
+  padding: 10px;
+}
+.alta-baja-mod-encuest {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.alta-baja-mod-users {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  width: 600px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.alta-baja-mod-docs {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.alta {
+  display: flex;
+  width: 20%;
+  min-width: 50%;
+  height: 200px;
+  margin-top: 15px;
+  padding: 0 10px;
+  border: 2px solid #34b6bb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  display: flex;
+  width: 20%;
+  min-width: 50%;
+  height: 200px;
+  margin-top: 15px;
+  padding: 0 10px;
+  border: 2px solid #34b6bb;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.docs-template {
+  display: flex;
+  width: 20%;
+  min-width: 50%;
+  height: 200px;
+  margin-top: 15px;
+  padding: 0 10px;
+  border: 2px solid #34b6bb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.modificar {
+  display: flex;
+  width: 20%;
+  height: 200px;
+  margin-top: 15px;
+  padding: 0 10px;
+  border: 2px solid #34b6bb;
+  text-align: center;
+  gap: 5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.eliminar {
+  display: flex;
+  width: 20%;
+  height: 200px;
+  margin-top: 15px;
+  padding: 0 10px;
+  border: 2px solid #34b6bb;
+  text-align: center;
+  gap: 5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin: 0;
+}
+.alta-baja-mod-encuest {
+  display: flex;
+  align-items: start;
+}
+
+/* Pantalla de ingreso de administradores */
+.pagina-ingreso-admin {
+  min-height: 100vh;
+  color: #19354d;
+  background: #edf4f8;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+.pagina-ingreso-admin .ingreso-admin {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(390px, 0.9fr);
+  min-height: 100vh;
+}
+.pagina-ingreso-admin .bienvenida {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  padding: clamp(2.5rem, 7vw, 6rem);
+  overflow: hidden;
+  border: 0;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #075d9d 0%, #0579b8 52%, #11a4c0 100%);
+}
+.pagina-ingreso-admin .bienvenida::before,
+.pagina-ingreso-admin .bienvenida::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+.pagina-ingreso-admin .bienvenida::before {
+  width: 28rem;
+  height: 28rem;
+  right: -10rem;
+  bottom: -12rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+.pagina-ingreso-admin .bienvenida::after {
+  width: 13rem;
+  height: 13rem;
+  top: -4rem;
+  left: 43%;
+  border: 2rem solid rgba(255, 255, 255, 0.08);
+}
+.pagina-ingreso-admin .marca-hcv,
+.pagina-ingreso-admin .bienvenida-contenido {
+  position: relative;
+  z-index: 1;
+}
+.pagina-ingreso-admin .marca-hcv {
+  display: inline-flex;
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 18px 35px rgba(0, 54, 93, 0.22);
+}
+.pagina-ingreso-admin .logo-hc {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  object-fit: contain;
+}
+.pagina-ingreso-admin .bienvenida-contenido {
+  max-width: 35rem;
+  margin-top: auto;
+  color: #fff;
+}
+.pagina-ingreso-admin .bienvenida-etiqueta,
+.pagina-ingreso-admin .panel-subtitulo {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.pagina-ingreso-admin .bienvenida-etiqueta {
+  color: #c7f5ff;
+}
+.pagina-ingreso-admin .bienvenida h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4vw, 4.25rem);
+  font-weight: 750;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+.pagina-ingreso-admin .bienvenida p {
+  max-width: 29rem;
+  margin-top: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.pagina-ingreso-admin .panel-ingreso {
+  display: flex;
+  width: min(100%, 34rem);
+  margin: auto;
+  padding: clamp(2rem, 5vw, 4rem);
+  flex-direction: column;
+  justify-content: center;
+}
+.pagina-ingreso-admin .panel-encabezado {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+.pagina-ingreso-admin .panel-icono {
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.9rem;
+  place-items: center;
+  background: #dff4f7;
+  font-size: 1.35rem;
+}
+.pagina-ingreso-admin .panel-subtitulo {
+  margin-bottom: 0.2rem;
+  color: #1683a4;
+}
+.pagina-ingreso-admin .panel-ingreso h2 {
+  margin: 0;
+  color: #13334c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.pagina-ingreso-admin #formulario {
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+.pagina-ingreso-admin .campo-formulario {
+  width: 100%;
+}
+.pagina-ingreso-admin .campo-formulario label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #35556b;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+.pagina-ingreso-admin .form-control {
+  min-height: 3.1rem;
+  border: 1px solid #c9d8e1;
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  color: #19354d;
+  box-shadow: none;
+}
+.pagina-ingreso-admin .form-control:focus {
+  border-color: #1499b8;
+  box-shadow: 0 0 0 0.22rem rgba(20, 153, 184, 0.16);
+}
+.pagina-ingreso-admin .btn-ingresar {
+  width: 100%;
+  min-height: 3.15rem;
+  margin-top: 0.5rem;
+  border: 0;
+  border-radius: 0.7rem;
+  background: linear-gradient(135deg, #087db3, #0aa3b5);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 20px rgba(6, 114, 164, 0.22);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.pagina-ingreso-admin .btn-ingresar:hover {
+  background: linear-gradient(135deg, #056eaa, #078f9f);
+  box-shadow: 0 14px 25px rgba(6, 114, 164, 0.28);
+  transform: translateY(-2px);
+}
+@media (max-width: 820px) {
+  .pagina-ingreso-admin .ingreso-admin {
+    grid-template-columns: 1fr;
+  }
+  .pagina-ingreso-admin .bienvenida {
+    min-height: 19rem;
+    padding: 2rem;
+  }
+  .pagina-ingreso-admin .marca-hcv {
+    width: 4.75rem;
+    height: 4.75rem;
+    padding: 0.6rem;
+    border-radius: 0.85rem;
+  }
+  .pagina-ingreso-admin .bienvenida h1 {
+    font-size: 2.35rem;
+  }
+  .pagina-ingreso-admin .bienvenida p {
+    margin-top: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .pagina-ingreso-admin .panel-ingreso {
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+}
+.alta-baja-mod-docs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
